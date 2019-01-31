@@ -1,14 +1,21 @@
 {% extends "blog/base.html" %}
 
 {% block content %}
-    <h1> Blog Home </h1>
 
+    <div class="container posts-container">
+        {% for post in posts %}
+            {% if forloop.last %}
+                <div class="container post">
+            {% else %}
+                <div class="container post border-bottom border-primary">
+            {% endif %}
 
-    {% for post in posts %}
-        <div class="container">
-            <h1>{{ post.title }}</h1>
-            <p>By {{ post.author }} on {{ post.date_posted }}</p>
-            <p>{{ post.content }}</p>
-        </div>
-    {% endfor %}
+                <div class="row post-heading justify-content-start">
+                    <h1 class="col">{{ post.title }}</h1>
+                    <p class="col-8">By {{ post.author }} on {{ post.date_posted|date:"F d, Y" }}</p>
+                </div>
+                <p>{{ post.content }}</p>
+            </div>
+        {% endfor %}
+    </div>
 {% endblock content %}
