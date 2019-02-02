@@ -1,7 +1,6 @@
 {% extends "blog/base.html" %}
 
 {% block content %}
-
     <div class="container posts-container">
         {% for post in posts %}
             {% if forloop.last %}
@@ -11,7 +10,7 @@
             {% endif %}
 
                 <div class="row post-heading justify-content-start">
-                    <h1 class="col">{{ post.title }}</h1>
+                    <h2 class="col">{{ post.title }}</h2>
                     <p class="col-8">By {{ post.author }} on {{ post.date_posted|date:"F d, Y" }}</p>
                 </div>
                 <p>{{ post.content }}</p>

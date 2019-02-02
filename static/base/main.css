@@ -1,0 +1,12 @@
+body {
+    background-color: #f7f8f9;
+}
+
+.page-header {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.width-80 {
+    width: 80%;
+}
