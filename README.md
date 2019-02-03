@@ -8,3 +8,5 @@ Functionality currently includes the following:
 * User registration
 * Post displaying
 * About page
+* User login
+* User profiles
