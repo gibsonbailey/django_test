@@ -1,0 +1,16 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block style_links %}
+<link rel="stylesheet" type="text/css" href="{% static 'users/main.css' %}">
+{% endblock style_links %}
+
+
+{% block body %}
+    <div class="content-section mx-auto registration border border-primary" style="width: 65%; margin-top: 5em; margin-bottom: 5em;">
+            <h2>You've logged out.</h2>
+            <small class="text-muted">
+                <a class="ml-2" href="{% url 'login' %}">Sign In</a>
+            </small>
+    </div>
+{% endblock body %}

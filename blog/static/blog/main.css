@@ -5,6 +5,16 @@
     padding-bottom: 0.5em;
 }
 
+.post-heading {
+    margin-bottom: 3em;
+}
+
 .post {
     margin-bottom: 3em;
+    padding-bottom: 2em;
+}
+
+.post-image {
+    width: 6em;
+    height: 6em;
 }
