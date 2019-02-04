@@ -1,0 +1,37 @@
+{% extends "blog/base.html" %}
+{% load static %}
+
+
+{% block style_links %}
+<link rel="stylesheet" type="text/css" href="{% static 'blog/posts.css' %}">
+{% endblock style_links %}
+
+{% block content %}
+    <div class="container posts-container">
+        <div class="container post">
+            <div class="row align-items-center post-heading">
+                <div class="col-2">
+                    <img class="rounded-circle post-image" src="{{ object.author.profile.image.url }}">
+                </div>
+                <div class="col-10 align-items-center">
+                    <div class="row justify-content-start">
+                        <h2 class="col">{{ object.title }}</h2>
+                        <p class="col-8">By {{ object.author }} on {{ object.date_posted|date:"F d, Y" }}</p>
+                    </div>
+                    {% if object.author == user %}
+                        <div class="row align-items-start">
+                            <a class="col-2 btn btn-sm btn-outline-secondary post-button" href="{% url 'post-update' object.id %}">Update Post</a>
+                            <a class="col-2 btn btn-sm btn-outline-danger post-button" href="{% url 'post-delete' object.id %}">Delete Post</a>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="row justify-content-end">
+                <div class="col-10">
+                    <p>{{ object.content }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}

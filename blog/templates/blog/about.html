@@ -1,11 +1,21 @@
 {% extends "blog/base.html" %}
+{% load static %}
+
+
+{% block style_links %}
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/about.css' %}">
+{% endblock style_links %}
+
 
 
 {% block content %}
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec pretium erat. Vivamus congue blandit aliquam. Sed pretium dolor eu sapien tempus, ut scelerisque justo iaculis. Nunc interdum massa iaculis, sollicitudin urna in, mattis turpis. Nulla in justo imperdiet, iaculis dolor sit amet, vulputate orci. Morbi ornare id nibh et sagittis. Nunc eu fringilla justo. Nulla facilisi. Morbi molestie massa et tellus finibus, ut ornare felis pulvinar. Donec blandit suscipit varius. Phasellus tincidunt id orci sed ultricies. Vivamus pretium eleifend mattis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-<p>Nunc ultrices lacinia augue, vel facilisis erat tincidunt in. Suspendisse justo tellus, tristique ac feugiat quis, convallis vitae massa. Morbi lobortis, nulla consequat consectetur rhoncus, sem mi ultrices eros, ac viverra tortor risus nec dui. Cras et iaculis nisl, non porta ligula. Suspendisse eget sollicitudin urna, non blandit turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum a tincidunt sapien.</p>
+<div class="container about-content">
+    <h1 class="page-header">{{ title }}</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec pretium erat. Vivamus congue blandit aliquam. Sed pretium dolor eu sapien tempus, ut scelerisque justo iaculis. Nunc interdum massa iaculis, sollicitudin urna in, mattis turpis. Nulla in justo imperdiet, iaculis dolor sit amet, vulputate orci. Morbi ornare id nibh et sagittis. Nunc eu fringilla justo. Nulla facilisi. Morbi molestie massa et tellus finibus, ut ornare felis pulvinar. Donec blandit suscipit varius. Phasellus tincidunt id orci sed ultricies. Vivamus pretium eleifend mattis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+    <p>Nunc ultrices lacinia augue, vel facilisis erat tincidunt in. Suspendisse justo tellus, tristique ac feugiat quis, convallis vitae massa. Morbi lobortis, nulla consequat consectetur rhoncus, sem mi ultrices eros, ac viverra tortor risus nec dui. Cras et iaculis nisl, non porta ligula. Suspendisse eget sollicitudin urna, non blandit turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum a tincidunt sapien.</p>
 
-<p>Sed rhoncus nibh et enim egestas, sit amet aliquet neque euismod. Donec feugiat quam eget turpis porta, et vehicula turpis auctor. Donec non vulputate massa. Curabitur nulla lorem, suscipit non tempus non, scelerisque at mauris. Pellentesque et ipsum porttitor, ultricies lorem sed, gravida dolor. Suspendisse tempor massa volutpat aliquam pharetra. Pellentesque laoreet euismod finibus. Nullam eget tempus urna, et cursus magna. Duis id sem vestibulum purus pretium porttitor aliquet ut magna. Nulla a dapibus orci.</p>
+    <p>Sed rhoncus nibh et enim egestas, sit amet aliquet neque euismod. Donec feugiat quam eget turpis porta, et vehicula turpis auctor. Donec non vulputate massa. Curabitur nulla lorem, suscipit non tempus non, scelerisque at mauris. Pellentesque et ipsum porttitor, ultricies lorem sed, gravida dolor. Suspendisse tempor massa volutpat aliquam pharetra. Pellentesque laoreet euismod finibus. Nullam eget tempus urna, et cursus magna. Duis id sem vestibulum purus pretium porttitor aliquet ut magna. Nulla a dapibus orci.</p>
 
-<p>Nulla blandit libero vitae dictum venenatis. Cras euismod, lectus ac euismod tincidunt, nunc ante volutpat neque, et congue tortor ante eu erat. Phasellus massa velit, elementum eget facilisis in, volutpat sed libero. Nam dolor tortor, vehicula eu sapien vel, blandit iaculis est. Donec nulla nunc, pellentesque quis neque pellentesque, convallis lacinia arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed leo quis ex aliquet euismod quis ac mauris. </p>
+    <p>Nulla blandit libero vitae dictum venenatis. Cras euismod, lectus ac euismod tincidunt, nunc ante volutpat neque, et congue tortor ante eu erat. Phasellus massa velit, elementum eget facilisis in, volutpat sed libero. Nam dolor tortor, vehicula eu sapien vel, blandit iaculis est. Donec nulla nunc, pellentesque quis neque pellentesque, convallis lacinia arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed leo quis ex aliquet euismod quis ac mauris. </p>
+</div>
 {% endblock content %}

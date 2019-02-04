@@ -3,10 +3,12 @@
     border-radius: 0.4em;
     padding-top: 2em;
     padding-bottom: 0.5em;
+    margin-top: 3em;
 }
 
 .post-heading {
     margin-bottom: 3em;
+    height: 100%;
 }
 
 .post {
@@ -17,4 +19,13 @@
 .post-image {
     width: 6em;
     height: 6em;
+}
+
+.post-title:hover {
+    text-decoration: none;
+}
+
+.post-button {
+    margin-left: 1em;
+    margin-right: 1em;
 }
